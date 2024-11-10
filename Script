@@ -2,15 +2,15 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Blox's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "KeySystem"})
 OrionLib:MakeNotification({
-	Name = "Key_Blox's_Hub_8273127361272132",
+	Name = "Key",
 	Content = "Sorry, but you need key "..Player.Name.."",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-_G.Key = "Key"
+_G.Key = "Key_Blox's_Hub_8273127361272132"
 _G.KeyInput = "string"
 function MakeScriptHub()
-   local Window = OrionLib:MakeWindow({Name = "Blox's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Blox's Hub"})
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHSAT0AAAAAAC2IONT556FIH5GKMS46A25OZZRDLNA",true))();
 end
 function CorrectKeyNotification()
    OrionLib:MakeNotification({
