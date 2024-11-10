@@ -13,7 +13,7 @@ _G.Key = "KeyBloxs"
 _G.KeyInput = "string"
 
 function MakeScriptHub()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHSAT0AAAAAAC2IONT4GNVDDEYCJ4QGCW7OZZRD5TA",true))();
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHSAT0AAAAAAC2IONT4IN57EDUZGNEKZJP2ZZREH6A",true))();
 end
 
 function CorrectKeyNotification()
