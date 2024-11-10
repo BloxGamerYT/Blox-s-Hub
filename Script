@@ -1,17 +1,21 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Player = game.Players.LocalPlayer
 local Window = OrionLib:MakeWindow({Name = "Blox's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "KeySystem"})
+
 OrionLib:MakeNotification({
 	Name = "Key",
 	Content = "Sorry, but you need key "..Player.Name.."",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-_G.Key = "Key_Blox's_Hub_8273127361272132"
+
+_G.Key = "KeyBloxs"
 _G.KeyInput = "string"
+
 function MakeScriptHub()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHSAT0AAAAAAC2IONT52LQRSD6OTHEGHYZSZZRDSUA",true))();
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHSAT0AAAAAAC2IONT4GNVDDEYCJ4QGCW7OZZRD5TA",true))();
 end
+
 function CorrectKeyNotification()
    OrionLib:MakeNotification({
 	   Name = "Key Correct!",
@@ -20,6 +24,7 @@ function CorrectKeyNotification()
 	   Time = 5
    })
 end
+
 function IncorrectKeyNotification()
    OrionLib:MakeNotification({
 	   Name = "Incorrect Key!",
@@ -28,14 +33,17 @@ function IncorrectKeyNotification()
 	   Time = 5
    })
 end
+
 local Tab = Window:MakeTab({
 	Name = "Key",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 local Section = Tab:AddSection({
 	Name = "Key System"
 })
+
 Tab:AddTextbox({
 	Name = "Enter Key",
 	Default = "",
@@ -44,20 +52,23 @@ Tab:AddTextbox({
 		_G.KeyInput = Value
 	end	  
 })
+
 Tab:AddButton({
 	Name = "Check Key",
 	Callback = function()
         if _G.KeyInput == _G.Key then
         MakeScriptHub()
-        CorrectKeyNotification()
+           CorrectKeyNotification()
         else
            IncorrectKeyNotification()
       	end
   	end    
 })
+
 local Tab = Window:MakeTab({
 	Name = "Credits",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
+
 Tab:AddLabel("This Hub creat by Blox, from Orin Library")
