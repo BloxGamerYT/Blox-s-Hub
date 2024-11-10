@@ -10,7 +10,7 @@ OrionLib:MakeNotification({
 _G.Key = "Key_Blox's_Hub_8273127361272132"
 _G.KeyInput = "string"
 function MakeScriptHub()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHS",true))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxGamerYT/Script-Blade-Ball/refs/heads/main/Script?token=GHSAT0AAAAAAC2IONT52LQRSD6OTHEGHYZSZZRDSUA",true))();
 end
 function CorrectKeyNotification()
    OrionLib:MakeNotification({
